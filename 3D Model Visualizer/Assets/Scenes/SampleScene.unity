@@ -315,7 +315,6 @@ MonoBehaviour:
   lookSpeedH: 2
   lookSpeedV: 4
   zoomSpeed: 10
-  dragSpeed: 6
   panSpeed: 10
   cameraPanSpeed: 5
 --- !u!1 &1057639391
