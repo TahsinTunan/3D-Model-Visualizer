@@ -5,13 +5,11 @@ using UnityEngine;
 public class InstantiateRandomly : MonoBehaviour
 {
     public GameObject[] objectToInstantiate;
-    private Vector3 pos = new Vector3 (0, 0, 0);
-    private Quaternion rotation = Quaternion.Euler(0, 0, 0);
 
     void Start()
     {
         int index = Random.Range(0, objectToInstantiate.Length);
-        instantiateObject(index, pos, rotation);
+        instantiateObject(index);
     }
 
     
@@ -20,8 +18,8 @@ public class InstantiateRandomly : MonoBehaviour
         
     }
 
-    void instantiateObject(int index, Vector3 pos, Quaternion rotation)
+    void instantiateObject(int index)
     {
-        Instantiate(objectToInstantiate[index], pos , rotation);
+        Instantiate(objectToInstantiate[index], Vector3.zero , Quaternion.identity);
     }
 }
