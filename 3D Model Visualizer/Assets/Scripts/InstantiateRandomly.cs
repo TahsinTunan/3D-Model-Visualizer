@@ -12,7 +12,7 @@ public class InstantiateRandomly : MonoBehaviour
         instantiateObject(index);
     }
 
-    
+
     void Update()
     {
         
