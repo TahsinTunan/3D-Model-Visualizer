@@ -35,7 +35,12 @@ public class ObjectRotate : MonoBehaviour
         // Reset Rotation
         if (Input.GetKeyDown("r"))
         {
-            transform.rotation = Quaternion.identity;
+            ResetRotation(transform);
         }
+    }
+
+    public void ResetRotation(Transform transform)
+    {
+        transform.rotation = Quaternion.identity;
     }
 }
