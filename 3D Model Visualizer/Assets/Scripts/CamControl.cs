@@ -21,7 +21,7 @@ public class CamControl : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         //Look around with Right Mouse
         if (Input.GetMouseButton(1))
