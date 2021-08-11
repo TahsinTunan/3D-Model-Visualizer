@@ -62,5 +62,20 @@ public class CamControl : MonoBehaviour
 
         //Zoom in and out with Mouse Wheel
         transform.Translate(0, 0, Input.GetAxis("Mouse ScrollWheel") * zoomSpeed, Space.Self);
+
+
+
+        // Reset Camera Position and Rotation
+        if (Input.GetKeyDown("r"))
+        {
+            ResetCam();
+        }
+    }
+
+
+    public void ResetCam()
+    {
+        transform.position = new Vector3(0, 0, -5);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }
