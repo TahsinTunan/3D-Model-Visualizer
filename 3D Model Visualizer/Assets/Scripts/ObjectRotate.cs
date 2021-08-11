@@ -32,7 +32,7 @@ public class ObjectRotate : MonoBehaviour
             transform.Rotate(new Vector3(0, 1, 0) * Time.deltaTime * rotationSpeed);
         }
 
-        // Reset Rotation
+        // Reset Object Rotation
         if (Input.GetKeyDown("r"))
         {
             ResetRotation(transform);
