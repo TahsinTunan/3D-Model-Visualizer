@@ -7,6 +7,6 @@ public class SceneLoader : MonoBehaviour
     public void QuitApp()
     {
         Application.Quit();
-        // Debug.Log("Application Ended!");
+        Debug.Log("Application Ended!");
     }
 }
